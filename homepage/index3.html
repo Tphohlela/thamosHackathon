@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index2.css">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+
+    <div class="greetingsHi">
+
+        <h1>Hi Job Seeker</h1>
+
+    </div>
+
+    <div class="search">
+
+        <div class="key">
+            <input type="text" placeholder="         Enter Keyword"> 
+        </div>
+
+
+        <div class="time">
+
+            <label for="time_span">Catergory:</label>
+
+            <select name="catergory" id="catergory">
+                <option value="6 months">6 months</option>
+                <option value="12 months">12 months</option>
+                <option value="18 months">18 months</option>
+            </select>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+
+    <div class="tabs">
+        <!-- Side bar -->
+        <div class="tabs_sidebar">
+            <button class="tabs_button tabs_button-active" data-for-tab="1">Job #1</button>
+            <button class="tabs_button " data-for-tab="2">Job #2</button>
+            <button class="tabs_button " data-for-tab="3">Job #3</button>
+
+        </div>
+
+        <!-- Content attached to the tabs -->
+        <div class="tabs_content tabs_content-active" data-tab="1">
+            <h2>Job #1</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id orci urna. Curabitur elementum arcu a
+                luctus egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                Proin ipsum justo, sodales vel orci quis, placerat sollicitudin turpis. Nam lacus neque, dignissim vel
+                lectus vitae, ultricies sollicitudin sapien. Nunc feugiat in libero sit amet gravida. Aenean vitae dui
+                nulla. Suspendisse vel leo leo. Nulla sit amet leo non sapien dignissim tristique in condimentum nulla.
+                Curabitur varius nisi diam, et lobortis risus posuere sed. Fusce at tortor enim. Sed semper augue eu
+                mauris scelerisque cursus. Nullam varius sit amet erat a faucibus. Integer fermentum in erat at
+                fermentum.
+            </p>
+
+            <!-- Lead to Application form -->
+
+            <button><a href="jobseek.html">APPLY</a></button>
+
+
+        </div>
+
+        <div class="tabs_content" data-tab="2">
+            <h2>Job #2</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id orci urna. Curabitur elementum arcu a
+                luctus egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                Proin ipsum justo, sodales vel orci quis, placerat sollicitudin turpis. Nam lacus neque, dignissim vel
+                lectus vitae, ultricies sollicitudin sapien. Nunc feugiat in libero sit amet gravida. Aenean vitae dui
+                nulla. Suspendisse vel leo leo. Nulla sit amet leo non sapien dignissim tristique in condimentum nulla.
+                Curabitur varius nisi diam, et lobortis risus posuere sed. Fusce at tortor enim. Sed semper augue eu
+                mauris scelerisque cursus. Nullam varius sit amet erat a faucibus. Integer fermentum in erat at
+                fermentum.
+            </p>
+
+        </div>
+
+        <div class="tabs_content" data-tab="3">
+            <h2>Job #3</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id orci urna. Curabitur elementum arcu a
+                luctus egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                Proin ipsum justo, sodales vel orci quis, placerat sollicitudin turpis. Nam lacus neque, dignissim vel
+                lectus vitae, ultricies sollicitudin sapien. Nunc feugiat in libero sit amet gravida. Aenean vitae dui
+                nulla. Suspendisse vel leo leo. Nulla sit amet leo non sapien dignissim tristique in condimentum nulla.
+                Curabitur varius nisi diam, et lobortis risus posuere sed. Fusce at tortor enim. Sed semper augue eu
+                mauris scelerisque cursus. Nullam varius sit amet erat a faucibus. Integer fermentum in erat at
+                fermentum.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+
+        // function setTabs() {
+        //     document.querySelectorAll(".tabs_button").forEach(button => {
+        //         button.addEventListener("click", () => {
+
+        //             const sidebar = button.parentElement;
+        //             const containerTab = sidebar.parentElement;
+        //             const numberTabs = button.dataset.forTab;
+        //             const tabToActivate = containerTab.querySelector('.tabs_content[data-tab="${numberTabs}"]')
+
+        //             // console.log(tabToActivate);
+
+        //             // sidebar.querySelectorAll(".tabs_button").forEach(button => {
+        //             //     button.classList.remove("tabs_button-active");
+        //             // })
+
+        //             // containerTab.querySelectorAll(".tabs_content").forEach(tab => {
+        //             //     tab.classList.remove("tabs_content-active");
+
+        //             // })
+
+        //             // button.classList.add("tabs_button-active");
+        //             // tabToActivate.classList.add("tabs_content-active");
+
+        //         });
+
+        //     });
+        // }
+
+        // document.addEventListener("DOMContentLoaded", () => {
+
+        //     setTabs();
+
+        //     // document.querySelectorAll(".tabs").forEach(containerTab => {
+        //     //     containerTab.querySelector(".tabs_sidebar .tabs_button").click();
+        //     // });
+
+        // });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+
+body{
+    background-color:white;
+    margin:0px;
+    padding:0px;
+}
+
+
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+.navigation{
+    width:100%;
+    height:95vh;
+    background-color: cadetblue; 
+    /* background-image:url("Dunes.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: 10%;
+    margin-top: 100px;
+} 
+
+nav{
+    clear: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color:white;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0px 5%;
+} 
+
+.clearfix{
+    overflow: auto;
+    zoom:1;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 95%;
+}
+
+ nav,ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li a{
+    margin: 55px;
+    font-size: 18px;
+    font-family: myrida pro regular;
+    color:gray;
+    font-weight: 700;
+}
+
+nav ul li a:hover{
+    color: cadetblue;
+}
+
+.logo{
+    font-family: Road-Test;
+    color: black;
+    font-size: 22px;
+    text-decoration: overline cadetblue solid 5px;
+}
+
+/* ABOUT */
+
+
+
+.about-container{
+    margin: 30px;
+    align-items: justify;
+    width:100%;
+    height:100vh;
+
+}
+
+.about-container p:nth-child(1){
+    color: black;
+    font-family: myriad pro;
+    font-weight:bold;
+    font-size: 40px;
+    /* line-height: 0px; */
+}
+
+
+
+/* FOOTER */
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul li a .sep{
+    margin: 0 28px;
+    opacity: 0.3;
+}
+
+footer ul li a .contact{
+    /* margin-left:80px; */
+    font-family: myrida pro regular;
+}
+
+footer ul li .contact{
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    /* margin-left:100px; */
+}
+
+footer ul li a:hover{
+    color: cadetblue;
+}
+
+footer ul li a{
+    color: rgb(6, 117, 121);
+}
+
+.footer{
+    clear: left;
+    height: 350px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.clearfix{
+    overflow: auto;
+    zoom:1;
+}
+
+
+.social-icons i{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:teal;
+    margin: 20px 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons{
+    display: flex;
+    margin-left: 540px;
+}
+
+.social-icons i{
+    color: black;
+    font-size: 20px;
+}
+
+.social-icons i:hover{
+    background-color:white;
+    box-shadow:2px 2px 12px rgba(0, 0, 0, 0.2);
+    transition: all ease 0.5s;
+}
+
+/* SCOCIAL BAR */
+.social-bar i:hover{
+    background-color:cadetblue;
+    box-shadow:2px 2px 12px rgba(0, 0, 0, 0.2);
+    transition: all ease 0.5s;
+}
+
+.social-bar {
+    position:fixed;
+    top:50%;
+    right:0px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform:translateY(-50%);
+}
+
+.social-bar i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0px;
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.social-bar i{
+    color: black;
+    font-size: 20px;
+}
+
+
+/* INDEX 2 */
+
+.greetingsHi{    
+    /* margin: auto; */
+    margin-left: 500px;
+    margin-bottom: 50px;
+}
+
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: cadetblue;
+
+}
+.search{
+    display: flex;
+    justify-content: space-around;
+}
+
+.key{
+    margin-right: -35px;
+}
+.time{
+    margin-left: 250px;
+}
+
+.tabs{
+    border: 1px solid #cccccc;
+    display: flex;
+}
+
+.tabs_sidebar{
+    width: 300px;
+    flex-shrink: 0;
+    background: #cccccc;
+
+}
+
+.tabs_button{
+    display: block;
+    padding: 10px;
+    background: #eeeeee;
+    border: none;
+    width: 100%;
+    height: 50px;
+
+    outline: none;
+    cursor: pointer;
+}
+/* what happens when the tabs button is clicked .. creat "active" which is pseudo-class*/
+.tabs_button:active{
+    background: #dddddd;
+}
+
+.tabs_button:not(:last-of-type){
+
+    border-bottom:1px solid #cccccc;
+
+}
+
+.tabs_button-active{
+    font-weight: bold;
+    border-right: 2px solid cadetblue ;
+    background:#dddddd;
+}
+
+
+/* tabs content is active */
+.tabs_content{
+    padding: 15px;
+    font-size: 0.8rem ;
+    display: none;
+}
+
+.tabs_content-active{
+    display: block;
+} 
+
+.tabs_content:first-child{
+    margin-top: 0;
+} 
