@@ -1,6 +1,6 @@
 var a = document.querySelector(".a");
 var b = document.querySelector(".b");
-var c = document.querySelector(".c")
+var y = document.querySelector(".y");
 
 var store ={};
 
@@ -13,10 +13,11 @@ if (localStorage['s']) {
 function track(){
 
     var name = a.value;
-    var cert = c.value;
+    var date = y.value;
+    //var cert = c.value;
 
     if(name){
-        store[name] = cert;
+        store[name] = 0;
         localStorage['s'] = JSON.stringify(store);
     }
 

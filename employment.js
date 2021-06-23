@@ -1,7 +1,7 @@
 var listJobs = document.querySelector(".listJobs");
 var viewBtn = document.querySelector(".viewBtn");
 var applyBtn = document.querySelector(".applyBtn");
-var searchBox = document.querySelector(".searchBox")
+var key = document.querySelector(".key");
 
 // var search = searchBox.value;
 
@@ -28,10 +28,17 @@ var jobList = [
 
 
 
-// function jobs(){
+function jobs(){
 
+    listJobs.innerHTML = `<h3 style="padding-left:40px;">Careers in Tech</h3>`
 //var search = searchBox.value;
 jobList.forEach(function (jobList) {
+   
 
-    listJobs.innerHTML += `<ol>${jobList.job}</ol>`
+    listJobs.innerHTML += `<ol>${'Job : '+ jobList.job + ' ,  ' + 'Qualification required :  ' + jobList.qual}</ol>`
+
 });
+}
+
+
+viewBtn.addEventListener('click',jobs)
