@@ -73,11 +73,20 @@ document.getElementById('select').onclick = function () {
         }
     }
 
+    if(dropdowns == "Diploma"){
+        listJobs.innerHTML = 'Unfortunately, you have not been matched successfully';
+    }
+   else if(dropdowns == "Bachelors Degree"){
+        listJobs.innerHTML = 'You have been matched successfully';
+    }
+
+
     jobList.forEach(function (jobList) {
         for (let i = 0; i < list1.length; i++) {
             const element = list1[i];
             // const rhythmic = list2[t];
             // alert(element)
+           
             if (element == jobList.job && dropdowns == jobList.qual) {
                 listJobs.innerHTML = 'You have been matched successfully';
                 listJobs.innerHTML += `<ol>${'Job : ' + jobList.job + ' ,  ' + 'Qualification required :  ' + jobList.qual}</ol>`
@@ -85,7 +94,7 @@ document.getElementById('select').onclick = function () {
                 store[date] = 1;
                
             }
-            // else {
+        
             //     listJobs.innerHTML = 'Unfortunately,we have not been able to find a match for you'
             //     store[name] = 0;
             //     store[date] = 1;

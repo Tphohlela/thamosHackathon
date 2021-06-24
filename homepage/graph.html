@@ -15,29 +15,8 @@
         <h4 style="padding-left:150px;">Number of applications for candidates with succesful vs unsuccesful matches for job requirements </h4>
         <canvas id="chart"></canvas>
     </div>
-    <script>
-        var mychart = document.getElementById('chart').getContext('2d');
-        var newChart = new Chart(mychart, {
-            type: "bar",
-            data: {
-                labels: ["week1", "week2", "week3", "week4"],
-                datasets: [{
-                    label: 'matching skills',
-                    data: [5, 10, 15, 20, 25, 30
-                ],
-                backgroundColor:'orange',
-                },
-                {
-                    label: 'unmatching skills',
-                    data: [2, 4, 6, 8, 10, 12
-                ], 
-                backgroundColor:'red',
-                
-                }]
-        },
-            options: {}
-        });
-    </script>
+    
+    <script src="./graph1.js" charset="utf-8"></script>
 </body>
 ​
 </html>
